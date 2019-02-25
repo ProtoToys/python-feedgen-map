@@ -9,7 +9,7 @@ window.onload = function () {
 
       function onEachFeature(feature, layer) {
 
-          layer.bindPopup("Institution: " + feature.properties.institution);
+          layer.bindPopup(feature.properties.institution);
       }
       var geojson = L.geoJson(data, {
         onEachFeature: onEachFeature
